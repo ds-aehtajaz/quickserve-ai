@@ -1,0 +1,20 @@
+{"text": "hi", "intent": "greeting"}
+{"text": "good evening", "intent": "greeting"}
+{"text": "hello there", "intent": "greeting"}
+{"text": "farewell", "intent": "goodbye"}
+{"text": "I'm leaving now", "intent": "goodbye"}
+{"text": "order 1 pizza for me", "intent": "place_order"}
+{"text": "I want to buy 2 notebooks", "intent": "place_order"}
+{"text": "get me a coffee please", "intent": "place_order"}
+{"text": "where is order ORD100", "intent": "track_order"}
+{"text": "what's the status of my package", "intent": "track_order"}
+{"text": "cancel ORD100", "intent": "cancel_order"}
+{"text": "I want to call off my order", "intent": "cancel_order"}
+{"text": "update order ORD100 to 1 burger", "intent": "modify_order"}
+{"text": "change quantity in my order", "intent": "modify_order"}
+{"text": "how much does shipping cost", "intent": "faq"}
+{"text": "what are your refund options", "intent": "faq"}
+{"text": "I need a human", "intent": "talk_to_human"}
+{"text": "speak to agent", "intent": "talk_to_human"}
+{"text": "zzz xyz nope", "intent": "fallback"}
+{"text": "what is weather today", "intent": "fallback"}

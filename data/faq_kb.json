@@ -1,0 +1,122 @@
+[
+  {
+    "question": "How long does delivery take?",
+    "answer": "Standard delivery takes 3-5 business days. Express delivery takes 1-2 business days and costs extra."
+  },
+  {
+    "question": "Do you deliver on weekends?",
+    "answer": "Yes, we deliver on Saturdays. Sunday delivery is available in select areas for an extra charge."
+  },
+  {
+    "question": "How much is the delivery charge?",
+    "answer": "Delivery is free on orders above Rs. 500. For smaller orders, a flat Rs. 40 delivery charge applies."
+  },
+  {
+    "question": "Do you offer free shipping?",
+    "answer": "Yes, orders above Rs. 500 qualify for free standard shipping."
+  },
+  {
+    "question": "How do I return a product?",
+    "answer": "To return a product, go to your order history, select the item, and click 'Initiate Return'. We accept returns within 7 days of delivery."
+  },
+  {
+    "question": "What is your return policy?",
+    "answer": "We offer a 7-day return policy on most items. Products must be unused and in original packaging. Perishable items cannot be returned."
+  },
+  {
+    "question": "How do I track a return?",
+    "answer": "Once your return is picked up, you will receive a tracking ID via email. Use that ID on our returns portal to check the status."
+  },
+  {
+    "question": "Can I exchange a product?",
+    "answer": "Yes, exchanges are allowed within 7 days of delivery for the same product in a different size or variant, subject to availability."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept UPI, credit and debit cards, net banking, wallets (Paytm, PhonePe), and cash on delivery."
+  },
+  {
+    "question": "Can I pay with UPI?",
+    "answer": "Yes, UPI payments are fully supported. You can use Google Pay, PhonePe, BHIM, or any UPI app."
+  },
+  {
+    "question": "Is cash on delivery available?",
+    "answer": "Yes, cash on delivery is available for orders up to Rs. 5000. Not available for express delivery slots."
+  },
+  {
+    "question": "What are your business hours?",
+    "answer": "Our customer support is available Monday to Saturday, 9 AM to 9 PM IST. The chatbot is available 24/7."
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "You can chat with us here, email support@quickserve.ai, or call 1800-123-4567 (toll-free, Mon-Sat 9AM-9PM)."
+  },
+  {
+    "question": "Where are you located?",
+    "answer": "Our fulfilment centres are in Bangalore, Mumbai, and Delhi. We ship pan-India."
+  },
+  {
+    "question": "How do I track my order?",
+    "answer": "Just tell me your order ID (e.g. ORD123) and I can pull the status for you right here in the chat."
+  },
+  {
+    "question": "How do I cancel an order?",
+    "answer": "You can cancel an order before it is dispatched. Tell me your order ID and I will cancel it for you."
+  },
+  {
+    "question": "Can I modify my order after placing it?",
+    "answer": "Yes, orders can be modified within 30 minutes of placing them, before they enter processing. Share your order ID and the changes you want."
+  },
+  {
+    "question": "What happens if my order is late?",
+    "answer": "If your order is more than 2 days late, contact support and we will issue a refund or re-delivery at no extra cost."
+  },
+  {
+    "question": "Is my payment information secure?",
+    "answer": "Yes, all transactions use 256-bit SSL encryption. We do not store card details on our servers."
+  },
+  {
+    "question": "Do you have a loyalty or rewards program?",
+    "answer": "Yes, every purchase earns QuickPoints. 100 QuickPoints = Rs. 10 off your next order. Points are credited within 24 hours of delivery."
+  },
+  {
+    "question": "Can I place a bulk order?",
+    "answer": "Yes, for bulk orders above Rs. 10,000, contact our B2B team at bulk@quickserve.ai for special pricing."
+  },
+  {
+    "question": "What if I receive a damaged product?",
+    "answer": "We're sorry to hear that. Share a photo via email to support@quickserve.ai or raise a complaint in the app. We will arrange a free replacement or full refund."
+  },
+  {
+    "question": "Do you offer gift wrapping?",
+    "answer": "Yes, gift wrapping is available for Rs. 50 per item. You can add this option during checkout."
+  },
+  {
+    "question": "How do I apply a coupon code?",
+    "answer": "Enter your coupon code in the 'Apply Coupon' field at checkout. The discount will be applied automatically if the code is valid."
+  },
+  {
+    "question": "Why was my payment declined?",
+    "answer": "Payments can be declined due to insufficient funds, wrong card details, or bank security checks. Try a different payment method or contact your bank."
+  },
+  {
+    "question": "What is the minimum order amount?",
+    "answer": "There is no minimum order amount. However, delivery charges apply for orders under Rs. 500."
+  },
+  {
+    "question": "Can I schedule a delivery for a specific time?",
+    "answer": "Yes, during checkout you can choose a preferred delivery slot: Morning (8AM-12PM), Afternoon (12PM-5PM), or Evening (5PM-9PM)."
+  },
+  {
+    "question": "Do you deliver outside India?",
+    "answer": "Currently we only deliver within India. International shipping is on our roadmap for the next year."
+  },
+  {
+    "question": "How do I update my delivery address?",
+    "answer": "You can update your address in your account settings. If an order is already placed, contact support quickly before it is dispatched."
+  },
+  {
+    "question": "What is your privacy policy?",
+    "answer": "We collect only the data needed to process your orders and improve your experience. We do not sell your data to third parties. Full policy at quickserve.ai/privacy."
+  }
+]

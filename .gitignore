@@ -1,0 +1,53 @@
+# Environment / secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Databases (regenerated on startup)
+*.db
+*.sqlite
+*.sqlite3
+
+# Trained models (too large for git — train locally or download separately)
+models/distilbert-intent/
+models/ner/
+models/baseline.joblib
+models/faq_index.faiss
+checkpoints/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Test / coverage artefacts
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Demo / runtime artefacts
+demo_transcript.json
+quickserve.db
+
+# Documentation screenshots (regenerated)
+docs/screenshots/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

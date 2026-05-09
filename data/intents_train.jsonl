@@ -1,0 +1,102 @@
+{"text": "hello", "intent": "greeting"}
+{"text": "hi there", "intent": "greeting"}
+{"text": "hey", "intent": "greeting"}
+{"text": "good morning", "intent": "greeting"}
+{"text": "good afternoon", "intent": "greeting"}
+{"text": "hi, how are you", "intent": "greeting"}
+{"text": "hello, I need some help", "intent": "greeting"}
+{"text": "hey there, can you assist me", "intent": "greeting"}
+{"text": "greetings", "intent": "greeting"}
+{"text": "what's up", "intent": "greeting"}
+{"text": "bye", "intent": "goodbye"}
+{"text": "goodbye", "intent": "goodbye"}
+{"text": "see you later", "intent": "goodbye"}
+{"text": "thanks, bye", "intent": "goodbye"}
+{"text": "that's all I needed, bye", "intent": "goodbye"}
+{"text": "thank you, goodbye", "intent": "goodbye"}
+{"text": "have a good day", "intent": "goodbye"}
+{"text": "I'm done for now", "intent": "goodbye"}
+{"text": "take care", "intent": "goodbye"}
+{"text": "catch you later", "intent": "goodbye"}
+{"text": "I want to order 2 pizzas", "intent": "place_order"}
+{"text": "can I order a burger", "intent": "place_order"}
+{"text": "please place an order for 3 sandwiches", "intent": "place_order"}
+{"text": "I'd like to buy 1 coffee", "intent": "place_order"}
+{"text": "order me 2 sodas", "intent": "place_order"}
+{"text": "I want to purchase a laptop bag", "intent": "place_order"}
+{"text": "add 4 notebooks to my cart", "intent": "place_order"}
+{"text": "place order for 1 headphone", "intent": "place_order"}
+{"text": "can you order 5 apples for me", "intent": "place_order"}
+{"text": "I need to order a pair of shoes", "intent": "place_order"}
+{"text": "I want 3 bottles of water delivered", "intent": "place_order"}
+{"text": "order 2 chicken wraps please", "intent": "place_order"}
+{"text": "buy me 1 keyboard", "intent": "place_order"}
+{"text": "get me 6 energy drinks", "intent": "place_order"}
+{"text": "place my order for 2 pens and 1 notebook", "intent": "place_order"}
+{"text": "where is my order", "intent": "track_order"}
+{"text": "track my order ORD123", "intent": "track_order"}
+{"text": "what is the status of order ORD456", "intent": "track_order"}
+{"text": "can you check order ORD789", "intent": "track_order"}
+{"text": "I want to know where my parcel is", "intent": "track_order"}
+{"text": "is my order shipped yet", "intent": "track_order"}
+{"text": "when will my order arrive", "intent": "track_order"}
+{"text": "track order number ORD001", "intent": "track_order"}
+{"text": "what happened to my package", "intent": "track_order"}
+{"text": "check delivery status ORD222", "intent": "track_order"}
+{"text": "has my order been dispatched", "intent": "track_order"}
+{"text": "give me an update on ORD333", "intent": "track_order"}
+{"text": "I'd like to cancel my order", "intent": "cancel_order"}
+{"text": "cancel order ORD123 please", "intent": "cancel_order"}
+{"text": "I don't want the order anymore", "intent": "cancel_order"}
+{"text": "please cancel ORD456", "intent": "cancel_order"}
+{"text": "I want to cancel my last order", "intent": "cancel_order"}
+{"text": "stop my order ORD789", "intent": "cancel_order"}
+{"text": "I changed my mind, cancel it", "intent": "cancel_order"}
+{"text": "delete order ORD001", "intent": "cancel_order"}
+{"text": "I need to cancel order ORD222", "intent": "cancel_order"}
+{"text": "call off my order", "intent": "cancel_order"}
+{"text": "change my order ORD123 to 3 burgers instead", "intent": "modify_order"}
+{"text": "I want to update order ORD456", "intent": "modify_order"}
+{"text": "modify my order please", "intent": "modify_order"}
+{"text": "can I change the quantity in order ORD789", "intent": "modify_order"}
+{"text": "update ORD001 to 2 coffees", "intent": "modify_order"}
+{"text": "I need to edit my order", "intent": "modify_order"}
+{"text": "swap the item in ORD222 to a sandwich", "intent": "modify_order"}
+{"text": "replace the pizza with a burger in ORD333", "intent": "modify_order"}
+{"text": "I'd like to change my order", "intent": "modify_order"}
+{"text": "adjust the quantity in my order", "intent": "modify_order"}
+{"text": "how long does delivery take", "intent": "faq"}
+{"text": "what is your shipping policy", "intent": "faq"}
+{"text": "do you deliver on weekends", "intent": "faq"}
+{"text": "how do I return a product", "intent": "faq"}
+{"text": "what payment methods do you accept", "intent": "faq"}
+{"text": "can I pay with UPI", "intent": "faq"}
+{"text": "is cash on delivery available", "intent": "faq"}
+{"text": "how much is the delivery charge", "intent": "faq"}
+{"text": "what is your return policy", "intent": "faq"}
+{"text": "can I exchange a product", "intent": "faq"}
+{"text": "how do I track a return", "intent": "faq"}
+{"text": "do you offer free shipping", "intent": "faq"}
+{"text": "what are your business hours", "intent": "faq"}
+{"text": "how do I contact support", "intent": "faq"}
+{"text": "where are you located", "intent": "faq"}
+{"text": "I want to talk to a human", "intent": "talk_to_human"}
+{"text": "connect me to an agent", "intent": "talk_to_human"}
+{"text": "I need to speak to someone", "intent": "talk_to_human"}
+{"text": "transfer me to customer support", "intent": "talk_to_human"}
+{"text": "can I talk to a real person", "intent": "talk_to_human"}
+{"text": "get me a support agent", "intent": "talk_to_human"}
+{"text": "I want human assistance", "intent": "talk_to_human"}
+{"text": "escalate this to a person", "intent": "talk_to_human"}
+{"text": "let me speak to someone", "intent": "talk_to_human"}
+{"text": "connect me to your team", "intent": "talk_to_human"}
+{"text": "blah blah blah", "intent": "fallback"}
+{"text": "qwerty uiop", "intent": "fallback"}
+{"text": "what is the meaning of life", "intent": "fallback"}
+{"text": "tell me a joke", "intent": "fallback"}
+{"text": "asdfghjkl", "intent": "fallback"}
+{"text": "can you fly a plane", "intent": "fallback"}
+{"text": "who is the president", "intent": "fallback"}
+{"text": "what is 2 plus 2", "intent": "fallback"}
+{"text": "123 abc xyz", "intent": "fallback"}
+{"text": "random stuff here", "intent": "fallback"}

@@ -1,0 +1,31 @@
+id,name,category,price,stock,description
+1,Margherita Pizza,Food,199,50,Classic tomato and mozzarella pizza
+2,Chicken Burger,Food,149,75,Crispy chicken patty with lettuce and mayo
+3,Veggie Sandwich,Food,99,100,Fresh vegetables in whole wheat bread
+4,Cappuccino,Beverages,79,200,Espresso with steamed milk and foam
+5,Cold Coffee,Beverages,89,150,Chilled coffee blended with ice
+6,Orange Juice,Beverages,69,100,Freshly squeezed orange juice
+7,Mineral Water 1L,Beverages,20,500,Packaged drinking water
+8,Energy Drink,Beverages,120,80,Caffeinated energy drink 350ml
+9,Chicken Wrap,Food,129,60,Grilled chicken with veggies in a tortilla
+10,Paneer Tikka,Food,179,40,Spiced cottage cheese grilled on skewer
+11,Laptop Bag 15in,Electronics Accessories,899,30,Waterproof laptop bag with multiple pockets
+12,Wireless Mouse,Electronics Accessories,499,45,2.4GHz wireless optical mouse
+13,USB-C Hub,Electronics Accessories,699,35,7-in-1 USB-C hub with HDMI and PD
+14,Mechanical Keyboard,Electronics Accessories,2499,20,Tactile mechanical keyboard with backlight
+15,Earphones,Electronics Accessories,399,60,In-ear wired earphones with mic
+16,Bluetooth Speaker,Electronics Accessories,1299,25,Portable Bluetooth 5.0 speaker
+17,A4 Notebook 200pg,Stationery,60,200,Spiral-bound ruled notebook
+18,Ballpoint Pen Pack,Stationery,35,300,Pack of 10 blue ballpoint pens
+19,Sticky Notes Pack,Stationery,49,150,Pack of 5 sticky note pads
+20,Highlighter Set,Stationery,79,120,Set of 6 fluorescent highlighters
+21,Branded T-Shirt,Clothing,299,100,100% cotton crew neck t-shirt
+22,Casual Sneakers,Clothing,1499,40,Lightweight canvas sneakers
+23,Leather Wallet,Clothing,599,50,Slim genuine leather wallet
+24,Backpack 20L,Clothing,1199,30,Everyday lightweight backpack
+25,Running Shoes,Clothing,2199,25,Cushioned running shoes with arch support
+26,Face Wash 100ml,Personal Care,149,80,Oil-control face wash for daily use
+27,Moisturiser SPF30,Personal Care,249,70,Daily moisturiser with sun protection
+28,Shampoo 300ml,Personal Care,199,90,Sulphate-free nourishing shampoo
+29,Hand Sanitiser,Personal Care,59,400,70% alcohol-based hand sanitiser 100ml
+30,Sunscreen SPF50,Personal Care,349,60,Broad spectrum sunscreen lotion 150ml
