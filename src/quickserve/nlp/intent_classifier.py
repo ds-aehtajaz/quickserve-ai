@@ -29,8 +29,56 @@ def _load_distilbert(model_path: str):
 
 def _load_baseline(model_path: str):
     global _baseline_model
-    if _baseline_model is None:
-        _baseline_model = joblib.load(model_path)
+    if _baseline_model is not None:
+        return
+
+    # Try loading the saved model first
+    if os.path.isfile(model_path):
+        try:
+            model = joblib.load(model_path)
+            # Sanity-check that predict_proba still works with the current sklearn version
+            _ = model.predict_proba(["test"])
+            _baseline_model = model
+            return
+        except Exception:
+            pass  # Fall through to retrain
+
+    # Retrain on the fly from the bundled dataset
+    _baseline_model = _train_baseline()
+
+
+def _train_baseline():
+    """Train a fresh TF-IDF + LogReg baseline from data/intents_train.jsonl."""
+    import json
+    from sklearn.pipeline import Pipeline
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.linear_model import LogisticRegression
+    from .preprocess import clean_text
+
+    # Locate training data (works for both local and cloud)
+    here = os.path.dirname(os.path.abspath(__file__))
+    candidates = [
+        os.path.join(here, "..", "..", "..", "data", "intents_train.jsonl"),
+        os.path.join(os.getcwd(), "data", "intents_train.jsonl"),
+        "/mount/src/quickserve-ai/data/intents_train.jsonl",
+    ]
+    data_path = next((p for p in candidates if os.path.isfile(p)), None)
+    if data_path is None:
+        raise FileNotFoundError("intents_train.jsonl not found in any known location")
+
+    texts, labels = [], []
+    with open(data_path, encoding="utf-8") as f:
+        for line in f:
+            row = json.loads(line)
+            texts.append(clean_text(row["text"]))
+            labels.append(row["intent"])
+
+    pipeline = Pipeline([
+        ("tfidf", TfidfVectorizer(ngram_range=(1, 2), max_features=3000, sublinear_tf=True)),
+        ("clf",   LogisticRegression(max_iter=500, C=1.0, solver="lbfgs")),
+    ])
+    pipeline.fit(texts, labels)
+    return pipeline
 
 
 def predict_intent(
