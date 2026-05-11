@@ -1,21 +1,17 @@
 """
-Hugging Face Spaces entry point.
-Runs the Streamlit chat UI directly (no separate FastAPI process needed on HF Spaces).
-The agent is invoked in-process so we don't need uvicorn here.
+Streamlit Cloud entry point.
+Streamlit Cloud runs `streamlit run app.py`, so this file IS the app.
+It runs the agent in-process (no separate FastAPI backend needed on the cloud).
 """
-import sys, os
-sys.path.insert(0, os.path.dirname(__file__))
+import os
+import sys
 
-# Force in-process agent mode (no HTTP backend on HF Spaces)
-os.environ.setdefault("QUICKSERVE_INPROCESS", "1")
+# Make src importable
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
 
-# Run the Streamlit UI
-import streamlit.web.bootstrap as bootstrap
-import streamlit.web.cli as stcli
+# Force in-process mode (UI calls the agent directly, not via HTTP)
+os.environ["QUICKSERVE_INPROCESS"] = "1"
 
-if __name__ == "__main__":
-    sys.argv = ["streamlit", "run", "src/quickserve/ui/app.py",
-                "--server.port=7860",
-                "--server.address=0.0.0.0",
-                "--server.headless=true"]
-    sys.exit(stcli.main())
+# Now import and run the UI module.
+# Since the file uses top-level Streamlit calls, importing it executes the page.
+import quickserve.ui.app  # noqa: F401

@@ -21,11 +21,9 @@ env/
 *.sqlite
 *.sqlite3
 
-# Trained models (too large for git — train locally or download separately)
+# Trained models — only DistilBERT is too large for git (273 MB)
+# Small models are included in the repo so Streamlit Cloud can run without retraining.
 models/distilbert-intent/
-models/ner/
-models/baseline.joblib
-models/faq_index.faiss
 checkpoints/
 
 # Notebook checkpoints
