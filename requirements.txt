@@ -5,8 +5,13 @@ sqlalchemy>=2.0
 pydantic>=2.0
 python-dotenv>=1.0
 requests>=2.31
-transformers>=4.40
-torch>=2.2
+# transformers is only needed if you have the fine-tuned DistilBERT model locally.
+# On Streamlit Cloud we use the TF-IDF baseline only, so transformers is optional.
+# Uncomment the next two lines if running DistilBERT locally:
+# transformers>=4.40
+# torch>=2.2
+
+# sentence-transformers brings in torch as a transitive dep, which is enough for our RAG pipeline.
 spacy>=3.7
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
 sentence-transformers>=2.5

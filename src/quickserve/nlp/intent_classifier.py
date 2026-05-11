@@ -1,8 +1,9 @@
 import os
 import joblib
-import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from .preprocess import clean_text
+
+# torch and transformers are imported lazily inside _load_distilbert()
+# to avoid the ~700 MB memory hit when only the baseline is used (e.g. on Streamlit Cloud).
 
 LABELS = [
     "greeting", "goodbye", "place_order", "track_order",
@@ -19,6 +20,8 @@ _baseline_model = None
 def _load_distilbert(model_path: str):
     global _distilbert_model, _distilbert_tokenizer
     if _distilbert_model is None:
+        # Lazy imports — only loaded when DistilBERT is actually used
+        from transformers import AutoTokenizer, AutoModelForSequenceClassification
         _distilbert_tokenizer = AutoTokenizer.from_pretrained(model_path)
         _distilbert_model = AutoModelForSequenceClassification.from_pretrained(model_path)
         _distilbert_model.eval()
@@ -58,6 +61,8 @@ def predict_intent(
         return {"intent": intent, "confidence": confidence}
 
     _load_distilbert(distilbert_path)
+    # Lazy import — only when DistilBERT path is actually used
+    import torch
     inputs = _distilbert_tokenizer(
         cleaned, return_tensors="pt", truncation=True, max_length=128
     )
