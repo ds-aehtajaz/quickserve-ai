@@ -2,6 +2,12 @@
 
 **NLP-Based Automated Customer Service Chatbot for Instant Support and Order Processing**
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://quickserve-ai-hwgsfey5hx9vnc9diyvdeb.streamlit.app/)
+[![GitHub](https://img.shields.io/badge/Source-GitHub-181717?logo=github)](https://github.com/ds-aehtajaz/quickserve-ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> 🚀 **Try it live:** https://quickserve-ai-hwgsfey5hx9vnc9diyvdeb.streamlit.app/
+
 An end-to-end customer service chatbot that combines trained NLP models (DistilBERT for intent classification, spaCy for NER), retrieval-augmented generation (FAISS + sentence-transformers), and a free LLM API (Groq + Llama-3.3-70B) for natural-language response generation.
 
 > MSc (Data Science) capstone project — Chandigarh University via Qollabb internship platform.
